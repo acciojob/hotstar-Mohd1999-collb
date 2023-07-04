@@ -26,7 +26,6 @@ public class UserControllers {
 
     @GetMapping("/getAvaialbleWebSeries")
     public Integer getAvailableCountOfWebSeriesViewable(@RequestParam("userId")Integer userId){
-
         return userService.getAvailableCountOfWebSeriesViewable(userId);
     }
 

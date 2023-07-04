@@ -2,6 +2,7 @@ package com.driver.controllers;
 
 
 import com.driver.EntryDto.SubscriptionEntryDto;
+import com.driver.model.User;
 import com.driver.services.SubscriptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,9 +21,8 @@ public class SubscriptionController {
 
     @PostMapping("/buy")
     public Integer buySubscription(SubscriptionEntryDto subscriptionEntryDto){
-
-        //We need to buy subscription and save its relevant subscription to the db and return the finalAmount
-
+        /*We need to buy subscription and save its relevant subscription to 
+        the db and return the finalAmount*/
         return subscriptionService.buySubscription(subscriptionEntryDto);
     }
 
